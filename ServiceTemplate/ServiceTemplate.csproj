@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <StartupObject>ServiceTemplate.Program</StartupObject>
+    <AssemblyName>ServiceTemplate</AssemblyName>
+    <RootNamespace>ServiceTemplate</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Topshelf" Version="4.3.0" />
+    <PackageReference Include="Topshelf.Log4Net" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Log4NetLibrary\Log4NetLibrary.csproj" />
+    <ProjectReference Include="..\TestProject\TestProject.csproj" />
+  </ItemGroup>
+
+</Project>
